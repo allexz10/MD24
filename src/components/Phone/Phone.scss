@@ -1,0 +1,22 @@
+.phone__number {
+  max-width: 135px;
+  margin-right: 100px;
+  width: 100%;
+  text-align: right;
+  position: relative;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTguNDggMjIuOTI2bC0xLjE5My42NThjLTYuOTc5IDMuNjIxLTE5LjA4Mi0xNy40OTQtMTIuMjc5LTIxLjQ4NGwxLjE0NS0uNjM3IDMuNzE0IDYuNDY3LTEuMTM5LjYzMmMtMi4wNjcgMS4yNDUgMi43NiA5LjcwNyA0Ljg3OSA4LjU0NWwxLjE2Mi0uNjQyIDMuNzExIDYuNDYxem0tOS44MDgtMjIuOTI2bC0xLjY4Ljk3NSAzLjcxNCA2LjQ2NiAxLjY4MS0uOTc1LTMuNzE1LTYuNDY2em04LjYxMyAxNC45OTdsLTEuNjguOTc1IDMuNzE0IDYuNDY3IDEuNjgxLS45NzUtMy43MTUtNi40Njd6Ii8+PC9zdmc+");
+    background-repeat: no-repeat;
+    transform: rotate(-110deg);
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+  }
+}

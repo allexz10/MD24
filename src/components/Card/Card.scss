@@ -1,0 +1,44 @@
+.card__wrapper { 
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  grid-template-columns: repeat(3, 318px);
+  margin-bottom: 60px;
+}
+
+.card__item {
+  padding: 5px;
+  border: 4px solid transparent;
+  cursor: pointer;
+}
+
+.card__item:hover {
+  border: 4px solid #f079a1;
+}
+
+.card__inner { 
+  overflow: hidden; 
+  height: 200px; 
+}
+
+.card__inner img {
+  width: 100%;  
+  transition: all 1s ease-out;
+}
+
+.card__inner img:hover {
+  transform: scale(1.2);
+}
+
+.text__wrapper {
+  background-color: #ffffff;
+  max-width: 350px;
+  width: 100%;
+  display: flex;  
+  justify-content: space-between;
+  padding: 20px 20px 25px 20px;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Kaushan Script", cursive;
+}

@@ -1,0 +1,108 @@
+.about__section {
+  width: 100%;
+  height: 600px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__wrapper {
+  max-width: 1110px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  position: relative;
+}
+
+.about__text {
+  position: relative;
+  z-index: 5;
+}
+
+.about__title {
+  font-family: "Kaushan Script", cursive;
+  font-size: 40px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 1.2;
+  margin: 0px 0px 20px 0px;
+  &--large {
+    font-size: 64px;
+    color: #ef7998;
+    font-weight: 900;
+  }
+}
+.about__paragraph {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 500;
+  color: rgb(126, 122, 122);
+  line-height: 1.5;
+  width: 420px;
+  padding: 5px 15px 5px 0px;
+  margin-bottom: 20px;
+}
+
+.about__button {
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: transparent;
+  font-family: "Kaushan Script", cursive;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all ease-out 0.3s;
+  outline: 3px solid transparent;
+  &:hover {
+    background-color: #000000;
+    color: #ef7998;
+  }
+  &:active,
+  &:focus {
+    outline: 3px solid #95b0bd;
+  }
+}
+
+.image__wrapper {
+  max-width: 540px;
+  width: 100%;
+  height: 405px;
+  background-color: #ffffff;
+}
+
+.about__image {
+  max-width: 540px;
+  width: 100%;
+  height: 405px;
+  background-image: url("https://js-beginners.github.io/filter-project/img/sweets-1.jpeg");
+  background-size: 540px 405px;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 5;
+}
+
+.image__wrapper::after {
+  position: absolute;
+  content: "";
+  background-color: transparent;
+  border: 8px solid rgb(249, 228, 148);
+  position: absolute;
+  z-index: 1;
+  bottom: 18px;
+  right: 20px;
+  max-width: 556px;
+  width: 100%;
+  height: 420px;
+  transition: all linear 1s;
+}
+
+.image__wrapper:hover::after {
+  bottom: -8px;
+  right: -8px;
+  height: 421px;
+}

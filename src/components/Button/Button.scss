@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+$--pink: #ef7998;
+$--grey: rgb(238, 238, 238);
+$--black: #000000;
+$--white: #ffffff;
+
+body {
+  background-color: $--grey;
+}
+
+.store__buttons {
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+
+  .button {
+    font-size: 16px;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid $--black;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: 3px solid transparent;
+    transition: all ease-out 0.3s;
+    text-transform: uppercase;
+  }
+  .button:hover {
+    background-color: $--black;
+    color: $--pink;
+  }
+
+  .button:focus {
+    border: 1px solid transparent;
+    outline: 3px solid #a7b5bd;
+  }
+}
+
+.nav__buttons {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 75px);
+  .button {
+    border: none;
+    outline: 2px solid transparent;
+    cursor: pointer;
+    background-color: transparent;
+    color: $--pink;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 500;
+    font-size: 24px;
+    transition: all ease-out 0.5s;
+  }
+  .button:hover {
+    color: $--black;
+  }
+}
